@@ -1,0 +1,17 @@
+def find_kth_missing(arr, k):
+    missing_count = 0
+    current_number = 1
+    index = 0
+    
+    while missing_count < k:
+        if index < len(arr) and arr[index] == current_number:
+            index += 1
+        else:
+            missing_count += 1
+        if missing_count < k:
+            current_number += 1
+    
+    return current_number
+arr = [2, 3, 4, 7, 11]
+k = 5
+print(find_kth_missing(arr, k))
