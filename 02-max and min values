@@ -1,0 +1,10 @@
+def find_max(arr):
+    return max(arr)
+
+def find_min(arr):
+    return min(arr)
+
+array = [3, 7, 1, 9, 4, 6, 5]
+print("Array:", array)
+print("Maximum:", find_max(array))
+print("Minimum:", find_min(array))
